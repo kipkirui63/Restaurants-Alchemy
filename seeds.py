@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from models import Restaurant, Customer, Review  # Adjust the import path based on your project structure
 
 # Create a database connection
-engine = create_engine('sqlite:///restaurant_reviews.db')  # Adjust the database URI
+engine = create_engine('sqlite:///restaurant_reviews.db') 
 
 # Create a session
 Session = sessionmaker(bind=engine)

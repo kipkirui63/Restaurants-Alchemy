@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
 
 # Create a database engine
-engine = create_engine('sqlite:///restaurant_reviews.db')  # Replace with your database URL
+engine = create_engine('sqlite:///restaurant_reviews.db')  
 
 # Create a session
 Session = sessionmaker(bind=engine)
@@ -12,7 +12,7 @@ session = Session()
 # Define the base class for declarative models
 Base = declarative_base()
 
-# Define your table models with autoload=True to reflect existing schema
+# Define table models with autoload=True to reflect existing schema
 class Customer(Base):
     __tablename__ = 'customers'
     
@@ -41,7 +41,7 @@ class Review(Base):
     restaurant_id = Column(Integer, ForeignKey('restaurants.id'))
     customer_id = Column(Integer, ForeignKey('customers.id'))
 
-    # Define relationships (if not already defined)
+    
 
     def __init__(self, star_rating, restaurant, customer):
         self.star_rating = star_rating
