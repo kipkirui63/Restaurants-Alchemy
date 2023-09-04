@@ -1,1 +1,114 @@
-Generic single-database configuration.
+# Restaurant Reviews Project
+
+The Restaurant Reviews Project is a simple database-driven application that allows users to review and rate restaurants. It is built using Python and SQLAlchemy, a popular Object-Relational Mapping (ORM) library for working with databases.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Database Schema](#database-schema)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Users can add new restaurants to the database.
+- Users can add new customers to the database.
+- Users can leave reviews for restaurants, including a star rating.
+- The application is built on top of SQLAlchemy, making it easy to work with a SQLite database.
+
+## Getting Started
+
+Follow the instructions below to get the project up and running on your local machine.
+
+### Prerequisites
+
+- Python 3.x
+- SQLAlchemy
+- SQLite
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/restaurant-reviews.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd restaurant-reviews
+   ```
+
+3. Create a virtual environment (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   ```
+
+4. Activate the virtual environment:
+
+   On Windows:
+
+   ```bash
+   venv\Scripts\activate
+   ```
+
+   On macOS and Linux:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+5. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Create the SQLite database and tables by running the following command:
+
+   ```bash
+   python models.py
+   ```
+
+2. Add sample data to the database by running:
+
+   ```bash
+   python seed_data.py
+   ```
+
+3. You can now run the application. You can create your own Python script or use a framework like Flask to build a web interface for interacting with the database.
+
+## Database Schema
+
+The project uses the following database schema:
+
+- `customers`: Stores customer information.
+- `restaurants`: Stores restaurant information.
+- `reviews`: Stores customer reviews for restaurants.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request.
+
+## License
+
+Contributions are welcome! If you find any issues or improvements, feel free to create a pull request.
+
+You can reach me on : Email: enocksang8356@@gmail.com Mattermost: @kipkirui Enock Linkedin: @enock-sang License This project is licensed under the MIT License.
+
+Copyright (c) [2023] [Kipkirui Enock]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
